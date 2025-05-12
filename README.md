@@ -1,2 +1,2 @@
-# case-study-template
-Template for case studies
+# Using JupyterGIS with the Urban Data Portal
+
