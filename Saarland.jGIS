@@ -1,0 +1,164 @@
+{
+  "layerTree": [
+    "a92b01e1-864e-4b4e-b8c2-7d8f49b145d8",
+    "3e9f3b84-365b-4398-8890-cc7edb8601d2",
+    "38db5132-a634-4f99-b337-faf1cdbb00e0",
+    "79a81b98-676d-4875-b10d-57a72e78de03"
+  ],
+  "layers": {
+    "38db5132-a634-4f99-b337-faf1cdbb00e0": {
+      "name": "Flood risk - IED companies in Saarland",
+      "parameters": {
+        "color": {
+          "circle-fill-color": "#fffc41",
+          "circle-radius": 10.0,
+          "circle-stroke-color": "#9929bd",
+          "circle-stroke-line-cap": "round",
+          "circle-stroke-line-join": "round",
+          "circle-stroke-width": 3.25
+        },
+        "opacity": 1.0,
+        "source": "43e4b4dd-42fb-4e13-aa18-0be2169f8d60",
+        "symbologyState": {
+          "renderType": "Single Symbol"
+        },
+        "type": "circle"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "3e9f3b84-365b-4398-8890-cc7edb8601d2": {
+      "name": "HQ100_Flaeche100_generalisiert",
+      "parameters": {
+        "color": {
+          "fill-color": "#00c7fc",
+          "stroke-color": "#1a0a53",
+          "stroke-line-cap": "round",
+          "stroke-line-join": "round",
+          "stroke-width": 4.25
+        },
+        "opacity": 1.0,
+        "source": "e278d126-31ad-4bd2-8eba-06b6bc5e7e2d",
+        "symbologyState": {
+          "renderType": "Single Symbol"
+        },
+        "type": "line"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "79a81b98-676d-4875-b10d-57a72e78de03": {
+      "filters": {
+        "appliedFilters": [
+          {
+            "feature": null,
+            "operator": null,
+            "value": null
+          }
+        ],
+        "logicalOp": null
+      },
+      "name": "Artefact Location",
+      "parameters": {
+        "color": {
+          "circle-fill-color": "#ff40ff",
+          "circle-radius": 15.0,
+          "circle-stroke-color": "#263e0f",
+          "circle-stroke-line-cap": "round",
+          "circle-stroke-line-join": "round",
+          "circle-stroke-width": 1.25
+        },
+        "opacity": 1.0,
+        "source": "8b884dc3-e4b0-424f-851c-6e7af47f87b7",
+        "symbologyState": {
+          "renderType": "Single Symbol"
+        },
+        "type": "circle"
+      },
+      "type": "VectorLayer",
+      "visible": true
+    },
+    "a92b01e1-864e-4b4e-b8c2-7d8f49b145d8": {
+      "name": "OpenStreetMap.Mapnik Layer",
+      "parameters": {
+        "source": "07f8bbdb-a412-44f1-8019-0b76c325b850"
+      },
+      "type": "RasterLayer",
+      "visible": true
+    }
+  },
+  "metadata": {},
+  "options": {
+    "bearing": 0.0,
+    "extent": [
+      757511.6941168366,
+      6301091.751255479,
+      789622.9363739335,
+      6333248.0303179845
+    ],
+    "latitude": 49.24872033422281,
+    "longitude": 6.949073425802334,
+    "pitch": 0.0,
+    "projection": "EPSG:3857",
+    "zoom": 11.763167193849856
+  },
+  "sources": {
+    "07f8bbdb-a412-44f1-8019-0b76c325b850": {
+      "name": "OpenStreetMap.Mapnik",
+      "parameters": {
+        "attribution": "(C) OpenStreetMap contributors",
+        "maxZoom": 19.0,
+        "minZoom": 0.0,
+        "provider": "OpenStreetMap",
+        "url": "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+        "urlParameters": {}
+      },
+      "type": "RasterSource"
+    },
+    "43e4b4dd-42fb-4e13-aa18-0be2169f8d60": {
+      "name": "Custom GeoJSON Layer Source",
+      "parameters": {
+        "path": "IED_Anlagen_4326.geojson"
+      },
+      "type": "GeoJSONSource"
+    },
+    "8b884dc3-e4b0-424f-851c-6e7af47f87b7": {
+      "name": "Artefact Location Source",
+      "parameters": {
+        "data": {
+          "bbox": null,
+          "features": [
+            {
+              "bbox": null,
+              "geometry": {
+                "bbox": null,
+                "coordinates": [
+                  6.98993,
+                  49.23609
+                ],
+                "type": "Point"
+              },
+              "id": null,
+              "properties": {
+                "description": "Camera location near Saarland flood event",
+                "id": "camera_location_001"
+              },
+              "type": "Feature"
+            }
+          ],
+          "type": "FeatureCollection"
+        },
+        "path": null,
+        "valid": null
+      },
+      "type": "GeoJSONSource"
+    },
+    "e278d126-31ad-4bd2-8eba-06b6bc5e7e2d": {
+      "name": "Custom GeoJSON Layer Source",
+      "parameters": {
+        "path": "HQ100_Flaeche100_generalisiert_4326.geojson"
+      },
+      "type": "GeoJSONSource"
+    }
+  }
+}
